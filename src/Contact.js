@@ -59,7 +59,7 @@ const SubmitButton = styled.button`
   cursor: pointer;
 `;
 
-function Contactus() {
+function Contact() {
   return (
     <Container>
       <Heading>Contact Us</Heading>
@@ -77,4 +77,4 @@ function Contactus() {
   );
 }
 
-export default Contactus;
+export default Contact;

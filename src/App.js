@@ -1,20 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import styled from 'styled-components';
-import logo from './logo.svg';
-import './App.css';
-
 import Home from './Home';
-import Contactus from './Contactus'
+
+
+import Contact from './Contact';
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  height: 100vh; /* Ensure the container takes the full viewport height */
+  padding: 0; /* Remove any padding */
   background-color: #f0f0f0;
 `;
+
 
 const Navbar = styled.div`
   display: flex;
@@ -40,7 +40,7 @@ function App() {
           <NavLink to="/contact">Contact</NavLink>
         </Navbar>
         <Routes>
-          <Route path="/contact" element={<Contactus />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </Container>
