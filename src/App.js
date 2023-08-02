@@ -2,9 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import styled from 'styled-components';
 import Home from './Home';
-
-
 import Contact from './Contact';
+import Projects from './Projects';
+import Me from './Me';
+import Blog from './Blog'; // Import the Blog component
 
 const Container = styled.div`
   display: flex;
@@ -14,7 +15,6 @@ const Container = styled.div`
   padding: 0; /* Remove any padding */
   background-color: #f0f0f0;
 `;
-
 
 const Navbar = styled.div`
   display: flex;
@@ -36,11 +36,17 @@ function App() {
     <Router>
       <Container>
         <Navbar>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/">Welcome</NavLink>
+          <NavLink to="/me">About Me</NavLink>
+          <NavLink to="/blog">Blog</NavLink> {/* Add the Blog link */}
+          <NavLink to="/projects">Projects</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </Navbar>
         <Routes>
           <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/me" element={<Me />} />
+          <Route path="/blog" element={<Blog />} /> {/* Add the Blog component route */}
           <Route path="/" element={<Home />} />
         </Routes>
       </Container>
