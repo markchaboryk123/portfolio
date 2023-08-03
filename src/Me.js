@@ -28,10 +28,10 @@
     function Me() {
     return (
         <MeContainer>
-        <MyPhoto src="/Photos/Mark.jpg" alt="Me" />
+        <MyPhoto src="/assets/MARK.jpg" alt="Me" />
         <MyDescription>
-            Hello, my name is Mark. I'm an engineer with a passion for software, technlogy, and investing. I love learning and creating new things!
-        </MyDescription>
+        Hello, my name is Mark. I'm an engineer with a passion for software, technology, and investing. I love learning and creating new things!  Please feel free to connect with me.        </MyDescription>
+    
         </MeContainer>
     );
     }
