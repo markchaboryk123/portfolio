@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 
 const Container = styled.div`
   display: flex;
@@ -62,11 +65,17 @@ const SubmitButton = styled.button`
 function Contact() {
   return (
     <Container>
-      <Heading>Contact Us</Heading>
-      <Text>
-        This is a placeholder for your contact information and a form where visitors can get in
-        touch with you.
-      </Text>
+      <Heading>Let's Get In Touch</Heading>
+      <Text>I would love to connect on LinkedIn or via a direct message below.</Text>
+      <div>
+          <a
+            href="https://www.linkedin.com/in/mchaboryk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="lg" />
+          </a>
+        </div>
       <ContactForm>
         <Input type="text" placeholder="Name" />
         <Input type="email" placeholder="Email" />
@@ -76,5 +85,6 @@ function Contact() {
     </Container>
   );
 }
+
 
 export default Contact;
