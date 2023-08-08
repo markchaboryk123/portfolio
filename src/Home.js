@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
+
+
 const Container = styled.div`
   display: flex;
   align-items: center;
@@ -13,6 +16,9 @@ const Container = styled.div`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 `;
 
+
+
+
 const Heading = styled.h1`
   font-size: 32px;
   margin-bottom: 20px;
@@ -22,16 +28,18 @@ const Text = styled.p`
   font-size: 18px;
 `;
 
+
+
 function Home() {
   return (
     <Container>
       <Heading>Welcome to My Portfolio</Heading>
       <Text>
-        This is a placeholder for the content of your home page. You can add your projects, skills,
-        and any other relevant information here.
+        Put something special below.
       </Text>
     </Container>
   );
 }
+
 
 export default Home;
