@@ -25,13 +25,23 @@
     text-align: center;
     `;
 
+
+
+const Text = styled.p`
+  font-size: 18px;
+`;
+
+const Image = styled.img`
+  max-width: 150px; /* Adjust the value to make the image smaller */
+  margin-top: 10px;
+`;
     function Me() {
     return (
         <MeContainer>
         <MyPhoto src="/assets/MARK.jpg" alt="Me" />
-        <MyDescription>
-        Hello, my name is Mark. I'm an engineer with a passion for software, technology, and investing. I love learning and creating new things!  Please feel free to connect with me.        </MyDescription>
-    
+        <MyDescription>Hello, my name is Mark. I'm an engineer with a passion for software, technology, and investing. I love learning and creating new things!  Please feel free to connect with me.        </MyDescription>
+        <Text>I am on a mission of continuous personal improvement.</Text>
+        <Image src="assets\infinity.ico" alt="Continuous Improvement" />
         </MeContainer>
     );
     }

@@ -47,7 +47,7 @@ function App() {
           <NavLink to="/me">About Me</NavLink>
           <NavLink to="/blog">Blog</NavLink> {/* Add the Blog link */}
           <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/contact">Connect</NavLink>
         </Navbar>
         <Routes>
           <Route path="/contact" element={<Contact />} />

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 const Container = styled.div`
   display: flex;
@@ -18,21 +20,53 @@ const Heading = styled.h1`
   margin-bottom: 20px;
 `;
 
-const Text = styled.p`
-  font-size: 18px;
-`;
-
-const Image = styled.img`
-  max-width: 300px; /* Adjust the value to make the image smaller */
+const SubHeading = styled.h1`
+  font-size: 24px;
   margin-top: 20px;
 `;
+
+
+const images = [
+  {
+    original: "https://picsum.photos/id/1018/1000/600/",
+    thumbnail: "https://picsum.photos/id/1018/250/150/",
+  },
+  {
+    original: "https://picsum.photos/id/1015/1000/600/",
+    thumbnail: "https://picsum.photos/id/1015/250/150/",
+  },
+  {
+    original: "https://picsum.photos/id/1019/1000/600/",
+    thumbnail: "https://picsum.photos/id/1019/250/150/",
+  },
+  {
+    original: "https://picsum.photos/id/36/4179/2790",
+    thumbnail: "https://picsum.photos/id/36/4179/2790",
+  },
+  {
+    original: "https://picsum.photos/id/47/4272/2848",
+    thumbnail: "https://picsum.photos/id/47/4272/2848",
+  }, {
+    original: "https://picsum.photos/id/36/4179/2790",
+    thumbnail: "https://picsum.photos/id/36/4179/2790",
+  }, {
+    original: "https://picsum.photos/id/74/4288/2848",
+    thumbnail: "https://picsum.photos/id/74/4288/2848",
+  }, {
+    original: "https://picsum.photos/id/69/4912/3264",
+    thumbnail: "https://picsum.photos/id/69/4912/3264",
+  },
+  
+];
+
+
 
 function Home() {
   return (
     <Container>
       <Heading>Welcome to My Portfolio</Heading>
-      <Text>On a mission of continuous personal improvement.</Text>
-      <Image src="assets\infinity.ico" alt="Continuous Improvement" />
+      <SubHeading>Things I have seen recently:</SubHeading>
+      <ImageGallery items={images} />
     </Container>
   );
 }
