@@ -57,7 +57,7 @@
             },
 
         {
-            title: 'Interest to see a complex and professionally deploy react application... #tech',
+            title: 'I am intrested to see a complex and professionally deployed react application... #tech',
             content:
                 'Amidst around 100 components, numerous props, and global variables, witnessing the deployment and architecture of a genuinely professional React application would offer valuable insights.'
             },
