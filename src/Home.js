@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
+// Styled component for the main container
 const Container = styled.div`
   display: flex;
   align-items: center;
@@ -15,11 +16,13 @@ const Container = styled.div`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 `;
 
+// Styled component for the main heading
 const Heading = styled.h1`
   font-size: 32px;
   margin-bottom: 20px;
 `;
 
+// Styled component for the subheading
 const SubHeading = styled.h1`
   font-size: 24px;
   margin-top: 20px;
@@ -60,12 +63,13 @@ const images = [
 ];
 
 
-
+// React component for the Home page
 function Home() {
   return (
     <Container>
       <Heading>Welcome to My Portfolio</Heading>
       <SubHeading>Things I have seen recently:</SubHeading>
+      {/* Note image gallery is a component i got of npm database to show my photos and have a "wow factor" */}
       <ImageGallery items={images} />
     </Container>
   );

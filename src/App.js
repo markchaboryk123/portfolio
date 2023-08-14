@@ -14,6 +14,8 @@ import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 library.add(fab, faCheckSquare, faCoffee)
 
 
+// Styled component for the main container
+//Note that flex is esnetially making the code responsive
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -23,6 +25,7 @@ const Container = styled.div`
   background-color: #f0f0f0;
 `;
 
+// Styled component for the navigation bar
 const Navbar = styled.div`
   display: flex;
   align-items: center;
@@ -32,6 +35,7 @@ const Navbar = styled.div`
   height: 60px;
 `;
 
+// Styled component for navigation links
 const NavLink = styled(Link)`
   text-decoration: none;
   color: #fff;
@@ -42,13 +46,14 @@ function App() {
   return (
     <Router>
       <Container>
-        <Navbar>
+        <Navbar> 
           <NavLink to="/">Welcome</NavLink>
           <NavLink to="/me">About Me</NavLink>
           <NavLink to="/blog">Blog</NavLink> {/* Add the Blog link */}
           <NavLink to="/projects">Projects</NavLink>
           <NavLink to="/contact">Connect</NavLink>
         </Navbar>
+        {/* Note that rotes allows us to selectively render unique components below the NAV bar */}
         <Routes>
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />

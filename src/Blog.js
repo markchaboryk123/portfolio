@@ -13,7 +13,8 @@
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     overflow-y: scroll;
-    max-height: 400px;
+    max-height: 700px;
+
     `;
 
 // Styled component for each individual blog post
