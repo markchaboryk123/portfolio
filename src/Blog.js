@@ -1,6 +1,8 @@
     import React from 'react';
     import styled from 'styled-components';
 
+
+    // Styled component for the main container of the blog
     const BlogContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -14,6 +16,7 @@
     max-height: 400px;
     `;
 
+// Styled component for each individual blog post
     const BlogPost = styled.div`
     display: flex;
     flex-direction: column;
@@ -21,15 +24,17 @@
     margin-bottom: 20px;
     `;
 
+// Styled component for the blog post title
     const BlogTitle = styled.h3`
     font-size: 20px;
     margin-bottom: 10px;
     `;
 
+// Styled component for the content of the blog post
     const BlogContent = styled.p`
     font-size: 16px;
     `;
-
+// Styled component for the top title of the blog
     const Top = styled.h1`
     align-self: flex-start; /* Align the top element to the left */
     font-weight: bold;
@@ -38,7 +43,9 @@
     `;
 
     function Blog() {
-    const blogPosts = [
+      
+        // Array of blog posts
+        const blogPosts = [
         {
         title: 'A Few Thoughts On Software Development #tech ',
         content:
@@ -68,6 +75,7 @@
     return (
         <BlogContainer>
         <Top>A few of my mirandering thoughts...</Top>
+        {/* Map through blogPosts array and render each post */}
         {blogPosts.map((post, index) => (
             <BlogPost key={index}>
             <BlogTitle>{post.title}</BlogTitle>
